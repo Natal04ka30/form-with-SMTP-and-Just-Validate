@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MY FIRST SMTP FORM</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="form">
+			<form action="#" id="form" class="form" enctype="multipart/form-data">
+				<h1 class="form-title">Отправка данних на почту</h1>
+				<div class="form-group">
+					<label for="formName" class="form-label">Имя*:</label>
+					<input id="formName" type="text" name="name" class="form-input _req">
+				</div>
+				<div class="form-group">
+					<label for="formEmail" class="form-label">Email*:</label>
+					<input id="formEmail" type="text" name="email" class="form-input _req _email">
+				</div>
+				<div class="form-group">
+					<label for="formPhone" class="form-label">Номер телефона*:</label>
+					<input id="formPhone" type="tel" name="phone" class="form-input _req _phone">
+				</div>
+				<div class="form-group">
+					<div class="form-label">Женщина или мужчина?</div>
+					<div class="options">
+						<div class="options-item">
+							<input id="formWoman" type="radio" checked name="gender" value="woman" class="options-input">
+							<label for="formWoman" class="options-label"><span>Женщина</span></label>
+						</div>
+						<div class="options-item">
+							<input id="formMen" type="radio" name="gender" value="men" class="options-input">
+							<label for="formMen" class="options-label"><span>Мужчина</span></label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="formMessage" class="form-label">Сообщение:</label>
+					<textarea id="formMessage" class="form-input" name="message"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="formDate" class="form-label">Выберите дату:</label>
+					<input type="date" id="formDate" class="form-input" name="date"></input>
+				</div>
+				<div class="form-group">
+					<label for="formUrl" class="form-label">Пример:</label>
+					<input type="url" id="formUrl" class="form-input" name="url"></input>
+				</div>
+				<div class="form-group">
+					<div class="form-label">Возраст</div>
+					<select name="age" class="select">
+						<option value="до 18">Несовершеннолетний</option>
+						<option value="от 25 до 65">Взрослый</option>
+						<option value="от 65">Пенсионер</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<div class="form-label">Прикрепить фото</div>
+					<div class="file">
+						<div class="file-item">
+							<input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file-input">
+							<div class="file-button">Выбрать</div>
+						</div>
+						<div id="formPreview" class="file-preview"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="checkbox">
+						<input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox-input _req">
+						<label for="formAgreement" class="checkbox-label"><span>Согласие с обработой</span></label>
+					</div>
+				</div>
+				<button type="submit" class="form-button">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<script defer src="./libs/inputmask.min.js"></script>
+	<script defer src="./node_modules/just-validate/dist/just-validate.production.min.js"></script>
+	<script defer src="./script.js"></script>
+
+</body>
+
+</html>
