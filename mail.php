@@ -23,8 +23,8 @@ $mail->Password = '********'; // Ваш пароль от почты с кото
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('tatarbeevanatala@gmail.com', 'TEST SITE'); // от кого будет уходить письмо?
-$mail->addAddress('smakotina.natasha@mail.ru');     // Кому будет уходить письмо 
+$mail->setFrom('natala@gmail.com', 'TEST SITE'); // от кого будет уходить письмо?
+$mail->addAddress('nata@mail.ru');     // Кому будет уходить письмо 
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
